@@ -1,48 +1,39 @@
-# Abdullah Rahman — Portfolio
+# Abdullah Rahman - Portfolio
 
-A research-oriented personal portfolio for Abdullah Rahman, presenting machine learning publications, software projects, academic experience, leadership, and recognition.
+This repository contains my personal portfolio website, where I share my machine learning research, publications, software projects, academic experience, leadership activities, and achievements.
 
-## Stack
+**Live website:** [abdullahrn.github.io](https://abdullahrn.github.io)
 
-- Next.js 16 with the App Router and static export
-- React 19 and TypeScript
-- Tailwind CSS 4 foundation with a custom design system
-- Motion for restrained reveal transitions
-- Lucide icons
-- ESLint and strict TypeScript checks
+## About me
 
-## Local development
+I am a Computer Science and Engineering undergraduate at Southeast University with interests in machine learning, artificial intelligence, data mining, computer vision, and software engineering.
+
+My research includes scalable classification, explainable AI, novel-class detection, ensemble learning, and lightweight knowledge distillation. I also build full-stack applications and intelligent systems using Java, Spring Boot, Python, and modern machine-learning tools.
+
+## Technology
+
+- Next.js, React, and TypeScript
+- Tailwind CSS and Motion
+- Static export deployed through GitHub Pages
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. Run all release checks with:
+To validate a production build:
 
 ```bash
 npm run check
 ```
 
-`npm run build` generates the deployable static site in `out/`.
+## Contact
 
-## Project structure
-
-```text
-src/
-  app/          Page shell, metadata, sitemap, robots, and global styles
-  components/   Reusable page sections and UI primitives
-  data/         Typed profile, publication, project, experience, award, and skill data
-public/         Static identity and social-sharing assets
-.github/        GitHub Pages deployment workflow
-```
-
-Update portfolio facts in `src/data/`. Publication and project records already support optional paper, DOI, code, demo, and image URLs without showing broken links.
-
-## GitHub Pages
-
-The `deploy-pages.yml` workflow builds the static export and publishes `out/` after pushes to `main`. To publish, enable **Settings → Pages → Source → GitHub Actions** in the repository. Availability may depend on repository visibility and the GitHub plan.
-
-## Portrait and CV
-
-The public portrait and CV are stored as `public/abdullah-rahman.jpg` and `public/abdullah-rahman-cv.pdf`. Replace those files using the same names when publishing updated versions.
+- [LinkedIn](https://linkedin.com/in/abdullahrn)
+- [GitHub](https://github.com/AbdullahRn)
+- [ResearchGate](https://www.researchgate.net/profile/Abdullah-Rahman-8)
+- [ORCID](https://orcid.org/0009-0003-2557-8722)
+- [Google Scholar](https://scholar.google.com/citations?user=n_OUKqEAAAAJ&hl=en)
+- Email: [abdullahrn746@gmail.com](mailto:abdullahrn746@gmail.com)
