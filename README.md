@@ -43,6 +43,6 @@ Update portfolio facts in `src/data/`. Publication and project records already s
 
 The `deploy-pages.yml` workflow builds the static export and publishes `out/` after pushes to `main`. To publish, enable **Settings → Pages → Source → GitHub Actions** in the repository. Availability may depend on repository visibility and the GitHub plan.
 
-## Adding a portrait or CV
+## Portrait and CV
 
-Place intentionally public assets in `public/` (for example, `public/profile.jpg` or `public/abdullah-rahman-cv.pdf`) and then connect them from the relevant component. The current version does not expose a placeholder download link or use an unverified portrait.
+The public portrait and CV are stored as `public/abdullah-rahman.jpg` and `public/abdullah-rahman-cv.pdf`. Replace those files using the same names when publishing updated versions.

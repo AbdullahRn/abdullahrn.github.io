@@ -95,7 +95,7 @@ button { font: inherit; }
 .hero-profile-links a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
 .hero-aside { align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
 .hero-monogram { position: relative; aspect-ratio: 1; display: grid; place-items: center; max-width: 310px; width: 100%; margin-inline: auto; }
-.hero-monogram > span { z-index: 2; display: grid; place-items: center; width: 142px; height: 142px; border-radius: 40px; background: var(--ink); color: var(--bg); font-size: 2.9rem; font-weight: 700; letter-spacing: -.08em; box-shadow: var(--shadow); transform: rotate(-4deg); }
+.hero-portrait { z-index: 2; width: 62%; height: 62%; border: 4px solid var(--surface); border-radius: 38px; object-fit: cover; object-position: center 32%; box-shadow: var(--shadow); transform: rotate(-2deg); }
 .orbit { position: absolute; border: 1px solid var(--accent); border-radius: 50%; }
 .orbit-one { width: 73%; height: 73%; opacity: .7; }
 .orbit-two { width: 98%; height: 98%; opacity: .24; border-style: dashed; }
@@ -129,6 +129,7 @@ button { font: inherit; }
 .text-link { display: inline-flex; align-items: center; gap: 5px; color: var(--accent); font-size: .76rem; font-weight: 700; white-space: nowrap; }
 .link-pending { color: var(--muted); opacity: .75; font-size: .7rem; white-space: nowrap; }
 .publication-list { margin-top: 18px; border-top: 1px solid var(--line); }
+.thesis-after-papers { margin-top: 30px; }
 .publication-row { display: grid; grid-template-columns: 72px 1fr auto; gap: 24px; padding: 29px 6px; border-bottom: 1px solid var(--line); transition: background .2s ease, padding .2s ease; }
 .publication-row:hover { padding-inline: 15px; background: color-mix(in srgb, var(--surface) 70%, transparent); }
 .publication-year { color: var(--accent); font: 700 .78rem ui-monospace, monospace; }
@@ -214,7 +215,7 @@ button { font: inherit; }
   .mobile-nav a { padding: 10px 0; color: var(--muted); font-size: .9rem; font-weight: 600; }
   .hero-layout { grid-template-columns: 1fr .4fr; gap: 38px; }
   .hero-monogram { max-width: 230px; }
-  .hero-monogram > span { width: 106px; height: 106px; border-radius: 31px; font-size: 2rem; }
+  .hero-portrait { border-radius: 30px; }
   .project-grid { grid-template-columns: 1fr 1fr; }
   .project-card:last-child { grid-column: 1 / -1; min-height: 430px; }
   .achievement-card, .achievement-card:nth-child(-n+2) { grid-column: span 3; }
@@ -230,7 +231,10 @@ button { font: inherit; }
   .section-description { grid-column: 1; margin: 0; }
   .hero { min-height: auto; padding-top: 132px; }
   .hero-layout { grid-template-columns: 1fr; }
-  .hero-aside { display: none; }
+  .hero-aside { display: flex; order: -1; align-items: flex-start; }
+  .hero-aside .hero-monogram { width: 148px; margin: 0 0 -4px; }
+  .hero-aside .hero-note { display: none; }
+  .hero-aside .hero-portrait { border-radius: 24px; }
   .hero h1 { font-size: clamp(3.6rem, 17vw, 5.6rem); }
   .hero-intro { font-size: .98rem; }
   .about-grid, .journey-grid { grid-template-columns: 1fr; gap: 30px; }

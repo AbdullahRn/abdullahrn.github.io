@@ -18,6 +18,7 @@ export const publications: Publication[] = [
     date: "June 2026",
     year: 2026,
     kind: "Conference Paper",
+    paperUrl: "https://www.researchgate.net/publication/414922046_Multi-Expert_EfficientNet_Forests_with_Lightweight_Knowledge_Distillation_for_Resource-Efficient_Vehicle_Classification",
     tags: ["Computer Vision", "Knowledge Distillation", "EfficientNet"],
   },
   {
@@ -26,6 +27,7 @@ export const publications: Publication[] = [
     venue: "28th International Conference on Computer and Information Technology (ICCIT)",
     year: 2025,
     kind: "Conference Paper",
+    paperUrl: "https://www.researchgate.net/publication/404606801_Scalable_K-Nearest_Neighbors_Classification_for_Mining_Big_Data",
     tags: ["Big Data", "kNN", "Classification"],
   },
   {
@@ -34,6 +36,7 @@ export const publications: Publication[] = [
     venue: "28th International Conference on Computer and Information Technology (ICCIT)",
     year: 2025,
     kind: "Conference Paper",
+    paperUrl: "https://www.researchgate.net/publication/404607067_A_Binary_Insomnia_Disease_Classification_Approach_with_Feature_Optimization_and_Explainable_AI_Insights",
     tags: ["Explainable AI", "Feature Optimization", "Healthcare ML"],
   },
   {
@@ -42,6 +45,7 @@ export const publications: Publication[] = [
     venue: "International Conference on Intelligent Systems and Data Science (ISDS)",
     year: 2025,
     kind: "Conference Paper",
+    paperUrl: "https://www.researchgate.net/publication/396579064_Random_Forest_with_Z-score_in_Supervised_Machine_Learning",
     tags: ["Random Forest", "Supervised Learning", "Data Science"],
   },
   {
@@ -50,6 +54,7 @@ export const publications: Publication[] = [
     venue: "IEEE International Conference on Quantum Photonics",
     year: 2025,
     kind: "Conference Paper",
+    paperUrl: "https://www.researchgate.net/publication/395990315_Early_Detection_of_Anemia_Using_Ensemble_Machine_Learning_Algorithms_with_Data_Balancing",
     tags: ["Ensemble Learning", "Data Balancing", "Healthcare ML"],
   },
 ];
