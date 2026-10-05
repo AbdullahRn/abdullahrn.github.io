@@ -94,8 +94,8 @@ button { font: inherit; }
 .hero-profile-links a span { display: grid; place-items: center; min-width: 22px; height: 22px; padding-inline: 4px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font: 750 .58rem ui-sans-serif, sans-serif; letter-spacing: -.01em; }
 .hero-profile-links a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
 .hero-aside { align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
-.hero-monogram { position: relative; aspect-ratio: 1; display: grid; place-items: center; max-width: 310px; width: 100%; margin-inline: auto; }
-.hero-portrait { z-index: 2; width: 62%; height: 62%; border: 4px solid var(--surface); border-radius: 38px; object-fit: cover; object-position: center 32%; box-shadow: var(--shadow); transform: rotate(-2deg); }
+.hero-monogram { position: relative; aspect-ratio: 4 / 5; display: grid; place-items: center; max-width: 390px; width: 100%; margin-inline: auto; }
+.hero-portrait { z-index: 2; width: 90%; height: 95%; border: 4px solid var(--surface); border-radius: 24px; object-fit: cover; object-position: center 28%; box-shadow: var(--shadow); transform: rotate(-1deg); }
 .orbit { position: absolute; border: 1px solid var(--accent); border-radius: 50%; }
 .orbit-one { width: 73%; height: 73%; opacity: .7; }
 .orbit-two { width: 98%; height: 98%; opacity: .24; border-style: dashed; }
@@ -117,8 +117,8 @@ button { font: inherit; }
 .cgpa span { color: var(--muted); font-size: .72rem; letter-spacing: .12em; }
 .cgpa strong { font-size: 1.7rem; line-height: 1; letter-spacing: -.04em; }
 
-.thesis-card { display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: start; padding: 30px; border-radius: var(--radius); background: var(--ink); color: var(--bg); box-shadow: var(--shadow); }
-[data-theme="dark"] .thesis-card { background: #e8f1ee; color: #10231f; }
+.thesis-card { display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: start; padding: 30px; border: 1px solid #2d655b; border-radius: var(--radius); background: #153d36; color: #f0f7f4; box-shadow: var(--shadow); }
+[data-theme="dark"] .thesis-card { background: #193a34; color: #eef6f3; border-color: #31544c; box-shadow: none; }
 .publication-mark { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 28%, transparent); color: var(--accent); }
 .publication-meta { display: flex; flex-wrap: wrap; gap: 8px 12px; color: var(--accent); font-size: .69rem; line-height: 1.45; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
 .publication-main h3, .publication-row h3 { margin: 9px 0 0; font-size: 1.3rem; line-height: 1.35; letter-spacing: -.02em; }
@@ -175,8 +175,7 @@ button { font: inherit; }
 .achievement-card h3 { margin: 0; font-size: 1rem; line-height: 1.35; }
 .achievement-card h3 + p { margin: 7px 0 0; color: var(--muted); font-size: .76rem; }
 
-.skills-section { background: var(--ink); color: var(--bg); }
-[data-theme="dark"] .skills-section { background: #e8f1ee; color: #10231f; }
+.skills-section { background: #10231f; color: #f2f7f5; }
 .skills-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; }
 .skills-layout .section-heading { display: block; margin: 0; }
 .skills-layout .section-heading h2 { margin-top: 18px; }
@@ -189,7 +188,7 @@ button { font: inherit; }
 .skill-group span { padding: 7px 11px; border: 1px solid color-mix(in srgb, currentColor 20%, transparent); border-radius: 9px; font-size: .78rem; }
 
 .contact-section { padding-bottom: 70px; }
-.contact-card { display: grid; grid-template-columns: 1.25fr .75fr; gap: 70px; align-items: end; padding: 58px; border-radius: 28px; background: var(--accent-dark); color: #f5fbf9; overflow: hidden; box-shadow: var(--shadow); }
+.contact-card { display: grid; grid-template-columns: 1.25fr .75fr; gap: 70px; align-items: end; padding: 58px; border-radius: 28px; background: #15574f; color: #f5fbf9; overflow: hidden; box-shadow: var(--shadow); }
 .contact-card .eyebrow { color: #a8e2d8; margin-bottom: 20px; }
 .contact-card h2 { max-width: 740px; }
 .contact-card h2 + p { max-width: 660px; margin: 20px 0 0; color: #c3d9d4; }
@@ -214,8 +213,8 @@ button { font: inherit; }
   .mobile-nav .container { display: grid; padding-block: 12px 20px; }
   .mobile-nav a { padding: 10px 0; color: var(--muted); font-size: .9rem; font-weight: 600; }
   .hero-layout { grid-template-columns: 1fr .4fr; gap: 38px; }
-  .hero-monogram { max-width: 230px; }
-  .hero-portrait { border-radius: 30px; }
+  .hero-monogram { max-width: 290px; }
+  .hero-portrait { border-radius: 20px; }
   .project-grid { grid-template-columns: 1fr 1fr; }
   .project-card:last-child { grid-column: 1 / -1; min-height: 430px; }
   .achievement-card, .achievement-card:nth-child(-n+2) { grid-column: span 3; }
@@ -232,9 +231,9 @@ button { font: inherit; }
   .hero { min-height: auto; padding-top: 132px; }
   .hero-layout { grid-template-columns: 1fr; }
   .hero-aside { display: flex; order: -1; align-items: flex-start; }
-  .hero-aside .hero-monogram { width: 148px; margin: 0 0 -4px; }
+  .hero-aside .hero-monogram { width: 220px; margin: 0 0 -4px; }
   .hero-aside .hero-note { display: none; }
-  .hero-aside .hero-portrait { border-radius: 24px; }
+  .hero-aside .hero-portrait { border-radius: 17px; }
   .hero h1 { font-size: clamp(3.6rem, 17vw, 5.6rem); }
   .hero-intro { font-size: .98rem; }
   .about-grid, .journey-grid { grid-template-columns: 1fr; gap: 30px; }
