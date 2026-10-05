@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowRight, BriefcaseBusiness, CodeXml, MapPin } from "lucide-react";
+import { ArrowDownRight, ArrowRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Reveal } from "./ui/reveal";
 
@@ -19,8 +19,13 @@ export function Hero() {
           </div>
           <div className="hero-meta">
             <span><MapPin size={15} /> {profile.location}</span>
-            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile"><CodeXml size={18} /></a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><BriefcaseBusiness size={18} /></a>
+            <div className="hero-profile-links" aria-label="Professional profiles">
+              {profile.profiles.map((item) => item.url ? (
+                <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${profile.name} on ${item.label}`}>
+                  <span aria-hidden="true">{item.mark}</span>{item.label}
+                </a>
+              ) : null)}
+            </div>
           </div>
         </Reveal>
 

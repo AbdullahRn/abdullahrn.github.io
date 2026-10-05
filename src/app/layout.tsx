@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     url: siteUrl,
     email: `mailto:${profile.email}`,
     address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "Bangladesh" },
-    sameAs: [profile.github, profile.linkedin],
+    sameAs: profile.profiles.flatMap((item) => item.url ? [item.url] : []),
     alumniOf: { "@type": "CollegeOrUniversity", name: "Southeast University" },
     knowsAbout: ["Machine Learning", "Artificial Intelligence", "Computer Vision", "Software Engineering"],
   };

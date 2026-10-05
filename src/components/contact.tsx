@@ -1,4 +1,4 @@
-import { ArrowUpRight, BriefcaseBusiness, CodeXml, Mail } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Reveal } from "./ui/reveal";
 
@@ -14,9 +14,14 @@ export function Contact() {
           </div>
           <div className="contact-actions">
             <a className="button button-light" href={`mailto:${profile.email}`}><Mail size={17} /> Email me</a>
-            <div className="contact-links">
-              <a href={profile.linkedin} target="_blank" rel="noreferrer"><BriefcaseBusiness size={17} /> LinkedIn <ArrowUpRight size={14} /></a>
-              <a href={profile.github} target="_blank" rel="noreferrer"><CodeXml size={17} /> GitHub <ArrowUpRight size={14} /></a>
+            <div className="contact-links" aria-label="Professional and research profiles">
+              {profile.profiles.map((item) => item.url ? (
+                <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${profile.name} on ${item.label}`}>
+                  <span className="profile-mark" aria-hidden="true">{item.mark}</span>
+                  <span>{item.label}</span>
+                  <ArrowUpRight size={14} />
+                </a>
+              ) : null)}
             </div>
           </div>
         </Reveal>
